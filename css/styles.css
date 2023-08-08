@@ -1,0 +1,111 @@
+html {
+    font-size: 62.5%;
+  }
+  
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: #6B69B2;
+    background-attachment: fixed;
+    color: white;
+}
+
+.background-tint {
+    background-color: #6B69B2;
+    background-blend-mode: multiply;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-title #title {
+    font-size: 3.2rem;
+    font-weight: lighter;
+}
+
+.main-title p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B2947EE;
+    padding: 2rem;
+    border-radius: 0.5625rem;
+}
+
+.main-form > * {
+    margin: 1rem 0;
+}
+
+.main-form fieldset {
+    border: none;
+}
+
+.main-form fieldset > * {
+    display: block;
+    width: 100%;
+}
+
+.main-form fieldset label {
+    margin-bottom: 0.4rem;
+}
+
+.main-form fieldset input,
+.main-form fieldset select,
+.main-form fieldset textarea {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.8rem;
+}
+
+.main-form fieldset select {
+    color: gray;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.main-form fieldset div > * {
+    margin-right: 1rem;
+}
+
+.main-form fieldset span {
+    font-size: 1.4rem;
+}
+
+.main-form fieldset textarea {
+    resize: vertical;
+}
+
+.main-form fieldset textarea,
+.main-form fieldset textarea::placeholder {
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+input[type="submit"] {
+    background-color: #59b371;;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: yellowgreen;
+}

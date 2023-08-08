@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form | Melek Redwan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="background-tint">
+  <div class="container">
+    <div class="main-title">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <form id="survey-form" action="post" class="main-form">
+      <fieldset> 
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required/>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required/>
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" id="number" min="16" max="110" placeholder="Age"/>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" class="current-role-dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="prefer-not">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you reccomend freeCodeCamp to a friend?</legend>
+        <div>
+          <input type="radio" id="def" name="reccomend" value="definitely"/>
+          <label for="def">Definitely</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="maybe" name="reccomend" value="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="nsure" name="reccomend" value= "nsure"/>
+          <label for="nsure">Not Sure</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved? <span>(Check all that apply)</span></legend>
+        <div>
+          <input type="checkbox" id="front-end" name="front-end" value="front-end"/>
+          <label for="front-end">Front-end Projects</label>
+        </div>
+        <div>
+          <input type="checkbox" id="back-end" name="back-end" value="back-end"/>
+          <label for="back-end">Back-end Projects</label>
+        </div>
+        <div>
+          <input type="checkbox" id="data-vis" name="data-vis" value="data-vis"/>
+          <label for="data-vis">Data Visualization</label>
+        </div>
+        <div>
+          <input type="checkbox" id="challenges" name="challenges" value="challenges"/>
+          <label for="challenges">Challenges</label>
+        </div>
+        <div>
+          <input type="checkbox" id="open-source" name="open-source" value="open-source"/>
+          <label for="open-source">Open Source Community</label>
+        </div>
+        <div>
+          <input type="checkbox" id="glitter-help" name="glitter-help" value="glitter-help"/>
+          <label for="glitter-help">Glitter help rooms</label>
+        </div>
+        <div>
+          <input type="checkbox" id="videos" name="videos" value="videos"/>
+          <label for="videos">Videos</label>
+        </div>
+        <div>
+          <input type="checkbox" id="city-meetups" name="city-meetups" value="city-meetups"/>
+          <label for="city-meetups">City Meetups</label>
+        </div>
+        <div>
+          <input type="checkbox" id="wiki" name="wiki" value="wiki"/>
+          <label for="wiki">Wiki</label>
+        </div>
+        <div>
+          <input type="checkbox" id="forum" name="forum" value="forum"/>
+          <label for="forum">Forum</label>
+        </div>
+        <div>
+          <input type="checkbox" id="addit-courses" name="addit-courses" value="addit-courses"/>
+          <label for="addit-courses">Additional Courses</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label>Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" id="submit" name="submit"/>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
